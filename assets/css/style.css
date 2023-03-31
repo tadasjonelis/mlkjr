@@ -17,22 +17,21 @@ body {
 
 /* logo & headings */
 
-header {
-    text-align: center;
-}
-
 h1, h2 {
     font-family: Cormorant Garamond, sans-serif;
     letter-spacing: 3px;
     color: #ffffff;
+
 }
 
 #logo {
+    text-align: center;
     font-size: 340%;
-   
+
 }
 
 #slogan {
+    text-align: center;
     font-family: Poppins, sans-serif;
     font-size: 230%;
 }
@@ -40,5 +39,27 @@ h1, h2 {
 /* navigation */
 
 #menu {
+    text-align: center;
     font-size: 120%;
+    letter-spacing: 3px;
+    margin-top: 5px;
+}
+
+#menu li {
+    display: inline;
+    list-style-type: none;
+    padding: 0px 15px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+    
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
