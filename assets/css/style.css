@@ -24,7 +24,13 @@ h1, h2 {
 
 }
 
+header a {
+    text-decoration: none;
+}
+
 #logo {
+    border-top: solid #000000;
+    margin-top: 20px;
     text-align: center;
     font-size: 340%;
 
@@ -34,6 +40,7 @@ h1, h2 {
     text-align: center;
     font-family: Poppins, sans-serif;
     font-size: 230%;
+    border-bottom: solid #000000;
 }
 
 /* navigation */
@@ -57,9 +64,41 @@ h1, h2 {
 }
 
 #menu a:hover {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid #000000;
 }
     
 .active {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid #000000;
+}
+
+/* banner */ 
+
+#mlk-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#mlk-banner {
+    height: 600px;
+    width: 100%;
+    background: url('../images/mlk-banner.png') no-repeat center center;
+ 
+
+    /* animation for zoom on banner */
+    animation-name: banner-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s
+
+}
+
+/* level of zoom for banner */ 
+@keyframes banner-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.985);
+    }
 }
